@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+}
+
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --black: #000;
+  --white: hsl(0, 0%, 100%);
+  --vLightGrayishBlue: hsl(210, 60%, 98%);
+  --lightGrayishBlue1: hsl(211, 68%, 94%);
+  --lightGrayishBlue2: hsl(205, 33%, 90%);
+  --grayishBlue: hsl(219, 14%, 63%);
+  --darkGrayishBlue: hsl(219, 12%, 42%);
+  --vDarkBlue: hsl(224, 21%, 14%);
+}
+
+body {
+  padding: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.notifications-box {
+  background-color: var(--blue);
+  padding: 2px 8px 2px 8px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white);
+  border-radius: 4px;
+  margin-left: 8px;
+ 
+}
+
+.read {
+  font-size: 14px;
+  color: var(--darkGrayishBlue);
+  cursor: pointer;
+}
+
+.read:hover{
+  color:var(--blue);
+  font-weight: 500;
+}
+
+.hover:hover{
+  color:var(--blue);
+  cursor: pointer;
+}
+.bg {
+  background-color: var(--lightGrayishBlue1);
+}
+
+.message-container {
+  display: flex;
+
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.message-container:not(:first-child) {
+  margin-top: 8px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  margin-right: 8px;
+}
+
+.message {
+  font-size: 16px;
+  color: var(--grayishBlue);
+  line-height: 18px;
+}
+.name {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.sub-heading {
+  color: var(--darkGrayishBlue);
+  font-weight: 800;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: var(--red);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.chess-group {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.thank-you {
+  margin-top: 8px;
+  border: 1px solid var(--lightGrayishBlue2);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.chess-logo {
+  width: 40px;
+  height: 40px;
+  padding-left: 8px;
+}
+
+.right-padding {
+  padding-right: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.hover-div:hover{
+  background-color: var(--lightGrayishBlue1);
+  cursor: pointer;
+}
+
+.pointer{
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width:1440px){
+  body{
+    background-color:var(--vLightGrayishBlue)
+  }
+
+  .main-container{
+    width:700px;
+border-radius: 16px;
+    background-color: var(--white);
+    padding:32px 16px 4px 16px;
+ 
+ 
+ margin: auto;
+ margin-top:1%;
+  }
+}
